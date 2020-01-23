@@ -1,0 +1,16 @@
+<div class="page-wrapper">
+  <div class="page-content photos-page">
+    <div class="page-header">
+      <h1 class="page-title">Photos</h1>
+      <app-photos-controlbar [form]="form"></app-photos-controlbar>
+    </div>
+    <div class="photos-gallery">
+      <div class="photo-list">
+        <app-photo-item class="photo-item-wrapper"
+                        *ngFor="let item of photos$ | async | orderBy:form.value.sortType"
+                        [item]="item">
+        </app-photo-item>
+      </div>
+    </div>
+  </div>
+</div>

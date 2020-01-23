@@ -1,0 +1,11 @@
+<div class="photo-item"
+     [class.active]="isSelect"
+     (click)="isSelect = !isSelect">
+  <div class="photo-image">
+    <img [src]="item.imageUrl" [alt]="item.name" [title]="item.name">
+  </div>
+  <p class="photo-title">{{item.name}}</p>
+  <p class="photo-size">{{item.size | filesize}}</p>
+  <p class="photo-lastModDate">{{item.lastModDate | date: 'dd/MM/yyyy - hh:mm:ss'}}</p>
+</div>
+

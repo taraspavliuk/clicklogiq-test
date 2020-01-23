@@ -1,0 +1,87 @@
+.photo-item {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+
+  &:hover, &.active {
+    border-color: #efefef;
+    background-color: #f9f9f9;
+
+    .photo-image {
+      &:before {
+        background-color: rgba(20, 20, 20, 0.8);
+      }
+    }
+  }
+
+  &.active {
+    .photo-image {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .photo-image {
+    position: relative;
+    margin-bottom: 10px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      transition: background-color 0.2s ease-out;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 32px;
+      height: 32px;
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGRhdGEtbmFtZT0iTGF5ZXIgMiIgaWQ9IkxheWVyXzIiIGZpbGw9JyMwMGI1ZjknPjxwYXRoIGZpbGw9JzAwYjVmOScgZD0iTTE1LDIxYTEsMSwwLDAsMS0uNzEtLjI5bC00LTRhMSwxLDAsMCwxLDEuNDItMS40MkwxNSwxOC41OWw2LjI5LTYuM2ExLDEsMCwwLDEsMS40MiwxLjQybC03LDdBMSwxLDAsMCwxLDE1LDIxWiIvPjxwYXRoIGQ9Ik0xNiwyOUExMywxMywwLDEsMSwyOSwxNiwxMywxMywwLDAsMSwxNiwyOVpNMTYsNUExMSwxMSwwLDEsMCwyNywxNiwxMSwxMSwwLDAsMCwxNiw1WiIvPjwvZz48ZyBpZD0iZnJhbWUiPjxyZWN0IGNsYXNzPSJjbHMtMSIgaGVpZ2h0PSIzMiIgd2lkdGg9IjMyIi8+PC9nPjwvc3ZnPg==);
+      opacity: 0;
+      transition: opacity 0.2s ease-out;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+
+      @media (max-width: 1440px) {
+        height: 120px;
+      }
+    }
+  }
+
+  .photo-title {
+    margin: 0 0 8px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444c63;
+  }
+
+  .photo-size {
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #9aa1b6;
+  }
+
+  .photo-lastModDate {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: #9aa1b6;
+  }
+}
