@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
-import {Photo} from './photos.model';
 import {PhotosService} from '../../services/photos-service/photos.service';
+import {Photo} from './photos.model';
 
 @Component({
   selector: 'app-photos',
