@@ -14,6 +14,20 @@
     height: 80px;
     padding: 0 30px;
   }
+  @media (max-width: 1024px) {
+    left: 200px;
+    height: 60px;
+    padding: 0 24px;
+  }
+
+  @media (max-width: 767px) {
+    left: 150px;
+    height: 48px;
+    padding: 0 15px;
+  }
+  @media (max-width: 440px) {
+    height: 40px;
+  }
 
   &-wrapper {
     padding: 30px 0;
@@ -25,11 +39,24 @@
     @media (max-width: 1440px) {
       padding: 20px 0;
     }
+
+    @media (max-width: 1024px) {
+      padding: 14px 0;
+    }
+    @media (max-width: 767px) {
+      padding: 10px 0;
+    }
   }
 
   .find-field {
     display: flex;
     align-items: center;
+
+    @media (max-width: 440px) {
+      svg {
+        display: none;
+      }
+    }
 
     input {
       padding: 5px 10px;
@@ -41,8 +68,26 @@
       color: #364760;
 
       @media (max-width: 1440px) {
+        font-size: 14px;
         width: 250px;
       }
+
+      @media (max-width: 1024px) {
+        width: 200px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 5px 8px;
+        font-size: 12px;
+        width: 100px;
+      }
+
+      @media (max-width: 440px) {
+        padding: 3px 5px;
+        font-size: 10px;
+        width: 100px;
+      }
+
 
       &::-webkit-input-placeholder {
         color: #b6bdd2;
@@ -79,9 +124,16 @@
       border-radius: 0;
       outline: none;
       cursor: pointer;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
 
     .user-name {
+      @media (max-width: 440px) {
+        font-size: 10px;
+      }
 
       &--dropdown {
         background-color: transparent;
@@ -90,6 +142,14 @@
         margin-left: 10px;
         outline: none;
         cursor: pointer;
+
+        @media (max-width: 1024px) {
+          margin-left: 8px;
+        }
+
+        @media (max-width: 440px) {
+          margin-left: 0;
+        }
       }
     }
 

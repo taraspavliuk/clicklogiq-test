@@ -6,6 +6,10 @@
   cursor: pointer;
   transition: all 0.2s ease-out;
 
+  @media (max-width: 767px) {
+    padding: 5px;
+  }
+
   &:hover, &.active {
     border-color: #efefef;
     background-color: #f9f9f9;
@@ -61,6 +65,9 @@
       @media (max-width: 1440px) {
         height: 120px;
       }
+      @media (max-width: 1024px) {
+        height: 100px;
+      }
     }
   }
 
@@ -76,6 +83,13 @@
     font-size: 14px;
     font-weight: 300;
     color: #9aa1b6;
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+    @media (max-width: 440px) {
+      font-size: 10px;
+    }
   }
 
   .photo-lastModDate {
@@ -83,5 +97,12 @@
     font-size: 12px;
     font-weight: 300;
     color: #9aa1b6;
+
+    @media (max-width: 1024px) {
+      font-size: 10px;
+    }
+    @media (max-width: 440px) {
+      font-size: 9px;
+    }
   }
 }

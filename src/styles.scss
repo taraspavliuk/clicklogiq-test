@@ -12,6 +12,9 @@ body {
   @media (max-width: 1440px) {
     font-size: 14px;
   }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
 }
 
 .wrapper {
@@ -24,6 +27,19 @@ body {
   @media (max-width: 1440px) {
     margin-left: 250px;
     padding: 80px 0 15px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-left: 200px;
+    padding: 60px 0 15px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 150px;
+    padding: 48px 0 10px;
+  }
+  @media (max-width: 440px) {
+    padding: 40px 0 10px;
   }
 
   &:after {
@@ -42,6 +58,12 @@ body {
     @media (max-width: 1440px) {
       height: 25px;
     }
+    @media (max-width: 1024px) {
+      height: 20px;
+    }
+    @media (max-width: 767px) {
+      height: 15px;
+    }
   }
 }
 
@@ -50,6 +72,12 @@ body {
   @media (max-width: 1440px) {
     padding: 25px 0 10px;
   }
+  @media (max-width: 1024px) {
+    padding: 20px 0 10px;
+  }
+  @media (max-width: 767px) {
+    padding: 10px 0;
+  }
 }
 
 .page-content {
@@ -57,6 +85,12 @@ body {
   padding: 0 40px;
   @media (max-width: 1440px) {
     padding: 0 30px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0 24px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 15px;
   }
 }
 
@@ -72,6 +106,16 @@ body {
     padding: 25px 0 0;
     margin-top: -25px;
   }
+
+  @media (max-width: 767px) {
+    padding: 20px 0 0;
+    margin-top: -20px;
+  }
+  @media (max-width: 440px) {
+    padding: 15px 0 0;
+    margin-top: -15px;
+  }
+
 }
 
 .page-title {
@@ -84,6 +128,18 @@ body {
   @media (max-width: 1440px) {
     font-size: 28px;
     margin: 0 0 16px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  @media (max-width: 767px) {
+    font-size: 20px;
+    margin: 0  0 6px;
+  }
+  @media (max-width: 440px) {
+    font-size: 18px;
+    margin: 0  0 4px;
   }
 }
 
